@@ -4,19 +4,20 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family:"DM Serif Display", serif;;
+    font-family:Arial;
 }
 :root{
     --text-color:#fff ;
-    --main-text:rgb(248, 109, 54);
-    --p-text:#e3dbdbc3;
+    --main-text:#ff7200;
+    --p-text:#eeeeee;
 }
 .main{
     width: 100%;
     background: linear-gradient(to top,rgba(0, 0, 0, 0.561)50%,rgba(0, 0, 0, 0.565)50% ),url(../image/1.jpg);
     background-position: center;
-    object-fit: cover;
-    height: 109vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 .logo{
     color: var(--main-text);
@@ -32,12 +33,17 @@
     width: 100%;
     align-items: center;
 }
+.links>ul{
+    display: flex;
+    text-align: center;
+    gap: 40px;
+   
+
+}
 .links a{
-    margin: 0 20px;
     color: var(--text-color);
     font-size: 1rem;
     transition: all ease-in-out .6s;
-
 }
 .links a:hover{
     color:var(--main-text);
@@ -45,14 +51,98 @@
 #search{
     background: transparent;
     border: 1px solid var(--main-text);
-    padding: 4px;
+    padding: 6px;
     border-radius: 5px 0px 0px 5px;
     color: #fff;
 }
 #btn{
+    width: 100px;
     color: var(--text-color);
     background: var(--main-text);
-    padding: 4.5px 14px;
-    border: none;
+    padding: 6px 14px;
+    border: 2px solid var(--main-text);
     border-radius: 0px 5px 5px 0px;
+}
+.context{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    padding: 10% 8%;
+    height: auto;
+    border: 2px solid red;
+}
+.text{
+    width: 50%;
+}
+.text h1{
+    color: var(--text-color);
+    width: min-content;
+    font-size:4rem;
+    margin-bottom: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text h1 span{
+    color: var(--main-text);
+    font-size: 5rem;
+}
+
+.text p{
+    color: var(--p-text);
+    line-height: 35px;
+    font-size: 1.2em;
+    margin-bottom:30px ;
+}
+.btn1{
+    color:black;
+    margin-top: 18px;
+    padding: 16px 60px;
+    font-size: larger;
+    font-weight: 700;
+    background: var(--main-text);
+    border: none;
+    border-radius: 10px;
+}
+.btn1:hover{
+    color:  var(--p-text);
+}
+
+.login{
+    height: 70vh;
+    width: 500px;
+    border-radius: 30px;
+    background: rgba(18, 18, 18, 0.879);
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 20% 10% ;
+    gap: 40px;
+   
+    
+}
+.login h1{
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    color:#ff7200;
+    background: var(--text-color);
+    border-radius: 20px;
+}
+.form input{
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--main-text);
+}
+
+
+
+
+
+@media screen  and (max-width:1440px){
+    
 }
